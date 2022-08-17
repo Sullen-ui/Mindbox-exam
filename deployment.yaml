@@ -37,7 +37,7 @@ spec:
             - name: Custom-Header
               value: Awesome
           initialDelaySeconds: 3
-          periodSeconds: 10
+          periodSeconds: 3
         readinessProbe:
           exec:
             command:
@@ -69,6 +69,3 @@ spec:
       name: cpu
       targetAverageUtilization: 80
   - type: Resource
-    resource:
-      name: memory
-      targetAverageUtilization: 90
